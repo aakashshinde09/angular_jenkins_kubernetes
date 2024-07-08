@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment  
+metadata:
+  name: backend-app
+spec: 
+  replicas: 3
+  selector:
+    matchLabels:
+      app: backend-app
+  strategy: 
+    type: RollingUpdate 
+  template: 
+    metadata: 
+      labels:
+        app: backend-app 
+    spec:
+      containers:
+      - name: backend-app 
+        image: aakashshinde09/angular_pipeline:backend
+        ports:
+        - name: springboot-tomcat
+          containerPort: 8085
+          protocol: TCP 
