@@ -17,8 +17,5 @@ RUN apt install maven -y
 # Expose the port the application runs on
 EXPOSE 8085
 
-# Command to run Tomcat
-#CMD ["catalina.sh", "run"]
-
 # Command to run the application
 CMD ["java", "-jar", "spring-backend-v1.jar"]
