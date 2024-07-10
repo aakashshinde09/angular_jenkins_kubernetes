@@ -18,4 +18,4 @@ RUN apt install maven -y
 EXPOSE 8085
 
 # Command to run the application
-CMD ["java", "-jar", "spring-backend-v1.jar"]
+CMD ["java", "-jar", "target/spring-backend-v1.jar"]
