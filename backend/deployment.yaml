@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
       - name: backend-app 
-        image: aakashshinde09/angular_pipeline:backend
+        image: aakashshinde09/angular-test:backendk8s
         ports:
-        - name: tomcat
-          containerPort: 30090
+        - name: springboot-tomcat
+          containerPort: 8085
           protocol: TCP 

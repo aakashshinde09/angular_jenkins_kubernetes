@@ -6,8 +6,7 @@ spec:
   selector: 
     app: backend-app 
   ports: 
-  - name: tomcat 
-    targetPort: 30090
-    port: 30090
-    nodePort: 30090
-  type: NodePort
+  - name: springboot-tomcat 
+    targetPort: 8085
+    port: 8085
+  type: ClusterIP
