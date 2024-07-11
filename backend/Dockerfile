@@ -12,10 +12,9 @@ WORKDIR /opt
 # Install dependencies
 RUN apt update 
 RUN apt install openjdk-11-jdk -y
-RUN apt install maven -y
 
 # Expose the port the application runs on
-EXPOSE 8085
+EXPOSE 30090
 
 # Command to run the application
 CMD ["java", "-jar", "target/spring-backend-v1.jar"]

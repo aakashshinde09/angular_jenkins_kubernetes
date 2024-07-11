@@ -19,5 +19,5 @@ spec:
         image: aakashshinde09/angular_pipeline:backend
         ports:
         - name: tomcat
-          containerPort: 8085
+          containerPort: 30090
           protocol: TCP 
